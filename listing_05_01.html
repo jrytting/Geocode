@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Your Map and the Real World</title>
+    <link type="text/css" rel="stylesheet" href="./listing_04_02.css" />
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM6BEjnUvItFuna8MZVwsXERKpjw7svKA">
+    </script>
+
+    <script type="text/javascript" src="./listing_05_02.js"></script>
+
+</head>
+<body onload="loadMap()">
+    <div id="map"></div>
+    <div id="sidebar">
+        <h2>Route Finder</h2>
+        <p>
+            Start Address
+            <button onclick="geocode()">Find</button>
+            <input type="text" id="start" />
+        </p>
+    </div>
+</body>
+</html>
