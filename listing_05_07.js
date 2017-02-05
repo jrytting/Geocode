@@ -14,7 +14,7 @@ function loadMap()
 
   // Confirm browser compatibility with the Maps API
   if (!GBrowserIsCompatible())
-    mapDiv.innerHTML = 'Sorry, your browser isn\'t compatible with Google Maps.';
+    mapDiv.innerHTML = 'Sorry, your browser isn\'t compatible with Google Maps because you are a loser!!!.';
   else
   {
     // Initialize the core map object
