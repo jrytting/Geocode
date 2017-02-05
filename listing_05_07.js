@@ -7,21 +7,21 @@ var directions;
 
 function loadMap()
 {
-  // loadMap: initialize the API and load the map onto the page ...comment by jrytting
+  // loadMap: initialize the API and load the map onto the page
 
   // Get the map container div
   var mapDiv = document.getElementById('map');
 
   // Confirm browser compatibility with the Maps API
   if (!GBrowserIsCompatible())
-    mapDiv.innerHTML = 'Sorry, your browser isn\'t compatible with Google Maps.';
+    mapDiv.innerHTML = 'Sorry, your browser isn\'t compatible with Google Maps because you are a loser!!!.';
   else
   {
     // Initialize the core map object
     map = new GMap2(mapDiv, 
       {mapTypes: [G_NORMAL_MAP, G_SATELLITE_MAP, G_HYBRID_MAP, G_PHYSICAL_MAP]});
 
-    // Set the starting map viewport, based on center coordinates and zoom level ...comment by jrytting
+    // Set the starting map viewport, based on center coordinates and zoom level
     var coordinates = new GLatLng(37.75, -122.44);
     map.setCenter(coordinates, 12);
 
